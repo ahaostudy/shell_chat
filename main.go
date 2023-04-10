@@ -16,6 +16,7 @@ import (
 
 func main() {
 	fmt.Print(utils.ColorString("Welcome to chat shell!\n\n", config.Cfg.Colors.Yellow))
+	config.InitConfig()
 	var messages entity.Messages
 	var ipt string
 	var question string

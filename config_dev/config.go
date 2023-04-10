@@ -22,7 +22,7 @@ type Colors struct {
 var Cfg = Config{
 	BaseUrl:  "https://api.openai.com",
 	GptModel: "gpt-3.5-turbo",
-	ApiKey:   "",
+	ApiKey:   "sk-xxx",
 	Stream:   true,
 	Colors: Colors{
 		Default: "\033[0m",
@@ -34,4 +34,8 @@ var Cfg = Config{
 	},
 	Prefix: "***",
 	Suffix: "***",
+}
+
+// InitConfig dynamic initialization
+func InitConfig() {
 }
